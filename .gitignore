@@ -1,0 +1,16 @@
+/build
+local.properties
+cygdrive/
+.gradle/
+.idea/
+*.iml
+/ci-release
+/maven
+obj/
+src/main/libs/
+.dll/
+/*.dll
+/*.so
+/.linux.so
+/*.dylib
+.DS_Store
