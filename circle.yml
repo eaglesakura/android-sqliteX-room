@@ -1,7 +1,6 @@
 checkout:
   post:
     - chmod 755 ./gradlew
-    - chmod -R 755 ./script
 machine:
   timezone:
     Asia/Tokyo
@@ -20,7 +19,6 @@ dependencies:
 test:
   override:
     - |
-      ./script/prebuilt-linux.sh
       export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/eaglesakura/build-dependencies/master/circleci/build-test.sh)"
 deployment:
